@@ -12,7 +12,7 @@ const Index = () => {
             <div className="w-10 h-10 rounded-xl gradient-primary flex items-center justify-center">
               <CreditCard className="w-5 h-5 text-primary-foreground" />
             </div>
-            <span className="font-bold text-xl text-foreground">PayLink</span>
+            <span className="font-bold text-xl text-foreground">MyLink</span>
           </div>
           <Link to="/admin">
             <Button variant="default" className="gradient-primary border-0 shadow-md hover:shadow-lg transition-all">
@@ -29,7 +29,7 @@ const Index = () => {
           <div className="max-w-3xl mx-auto text-center animate-fade-in">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent text-accent-foreground text-sm font-medium mb-6">
               <Shield className="w-4 h-4" />
-              Sistem Pembayaran Aman & Terpercaya
+              Buat Link Pembayaranmu Semakin Kren Dan Profesional
             </div>
             <h1 className="text-4xl md:text-6xl font-extrabold text-foreground mb-6 leading-tight">
               Generate Link Pembayaran{" "}
@@ -60,7 +60,7 @@ const Index = () => {
               Semua yang Anda butuhkan untuk mengelola pembayaran dengan efisien
             </p>
           </div>
-          
+
           <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
             <FeatureCard
               icon={<Link2 className="w-6 h-6" />}
@@ -87,25 +87,25 @@ const Index = () => {
       {/* Footer */}
       <footer className="py-8 border-t border-border/50">
         <div className="container mx-auto px-4 text-center text-muted-foreground">
-          <p>© 2024 PayLink. Sistem Generate Link Pembayaran.</p>
+          <p>© 2024 MyLink. Sistem Generate Link Pembayaran.</p>
         </div>
       </footer>
     </div>
   );
 };
 
-const FeatureCard = ({ 
-  icon, 
-  title, 
-  description, 
-  delay 
-}: { 
-  icon: React.ReactNode; 
-  title: string; 
+const FeatureCard = ({
+  icon,
+  title,
+  description,
+  delay
+}: {
+  icon: React.ReactNode;
+  title: string;
   description: string;
   delay: string;
 }) => (
-  <div 
+  <div
     className="bg-card rounded-2xl p-8 shadow-md hover:shadow-lg transition-all duration-300 border border-border/50 animate-slide-up"
     style={{ animationDelay: `${delay}ms` }}
   >
