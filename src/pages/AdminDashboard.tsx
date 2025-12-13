@@ -65,7 +65,7 @@ const AdminDashboard = () => {
     if (checking) {
         return (
             <div className="min-h-screen grid place-items-center bg-background">
-                <div className="text-sm text-muted-foreground">Memuat dashboard admin...</div>
+                <div className="text-sm text-muted-foreground">dashboard admin...</div>
             </div>
         );
     }

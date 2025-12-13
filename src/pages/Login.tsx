@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { Toggle } from "@/components/ui/toggle";
 import { Eye, EyeOff } from "lucide-react";
+import { Link } from "react-router-dom";
 
 type Role = "admin" | "user";
 
@@ -102,8 +103,19 @@ const LoginPage = () => {
 
                         {error && <p className="text-red-500 text-sm">{error}</p>}
 
+                        {/* Tombol Masuk */}
                         <Button type="submit" className="w-full py-2 rounded-xl" disabled={loading}>
                             {loading ? "Memproses..." : "Masuk"}
+                        </Button>
+
+                        {/* Tombol Daftar (di bawah Masuk) */}
+                        <Button
+                            type="button"
+                            variant="outline"
+                            className="w-full py-2 rounded-xl"
+                            asChild
+                        >
+                            <Link to="/register">Daftar</Link>
                         </Button>
                     </form>
                 </CardContent>

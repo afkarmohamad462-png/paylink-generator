@@ -16,7 +16,7 @@ const Index = () => {
           </div>
           <Link to="/admin">
             <Button variant="default" className="gradient-primary border-0 shadow-md hover:shadow-lg transition-all">
-              Dashboard Admin
+              Login
             </Button>
           </Link>
         </div>
